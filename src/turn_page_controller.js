@@ -2,6 +2,7 @@ export default {
 	props: {
 		item: Object,
 		index: Number,
+		totalSize: Number,
 		width: {
 			type: Number,
 			default: 0

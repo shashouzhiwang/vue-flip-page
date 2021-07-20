@@ -8,7 +8,7 @@
              :style="(Object.assign({}, {width: width+'px', height: height+'px'}, styles[1]))">
           <div class="turn-page-left-inner">
             <div class="manual-item">
-              <div class="page-count">{{index + 1}} / {{totalSize ?  totalSize : length}}</div>
+              <div class="page-count">{{index + 1}} / {{totalSize}}</div>
               <div class="manual-page">
                 <div class="page-photo">
                   <img :src="item.picture_image">
@@ -31,7 +31,7 @@
         <div class="turn-page-right-content"
              :style="(Object.assign({}, {width: width+'px', height: height+'px'}, styles[0]))">
           <div class="manual-item">
-            <div class="page-count">{{index + 1}} / {{totalSize ?  totalSize : length}}</div>
+            <div class="page-count">{{index + 1}} / {{totalSize}}</div>
             <div class="manual-page">
               <div class="page-photo">
                 <img :src="item.picture_image">
