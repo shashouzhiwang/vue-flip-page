@@ -1,7 +1,7 @@
 <template>
   <div class="turn" ref="turn" :style="{width: width+'px', height: height+'px'}">
     <template v-for="(item,index) in data">
-      <turn-page  v-if="index == backPage || index == turnPage" :index="index" :totalSize="item.totalSize"  :width="width" :item="item" :height="height" :length="data.length"
+      <turn-page  v-if="index == backPage || index == turnPage" :index="index" :totalSize="totalSize"  :width="width" :item="item" :height="height" :length="data.length"
                   :active="index == turnPage && turnActive" :styles="index === turnPage ? styles : defaultStyles">
       </turn-page>
     </template>

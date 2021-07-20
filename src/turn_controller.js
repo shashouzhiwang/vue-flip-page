@@ -413,6 +413,7 @@ export default {
 	components: {TurnPage},
 	props: {
 		data: Array,
+		totalSize: Number,
 		width: {
 			type: Number,
 			default: 0
@@ -441,6 +442,8 @@ export default {
 		};
 	},
 	mounted() {
+		console.log(this.totalSize);
+		debugger;
 		this.$nextTick(() => {
 			this.TouchMove();
 		});
